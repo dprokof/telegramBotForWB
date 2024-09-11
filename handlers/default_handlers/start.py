@@ -9,9 +9,7 @@ from loader import dp
 
 @dp.message(Command('start'))
 async def cmd_start(message: types.Message):
-    await message.answer(f'Привет, меня зовут Алина, я такой же селлер как и ты, который хочет экономить на поставках\n'
-                         f'Раньше я сама отслеживала коэффициенты, но теперь за меня это делает телеграм-бот.\n'
-                         f'Приглашаю тебя к регистрации\n')
+    await message.answer(f'Привет....\n')
     builder = ReplyKeyboardBuilder()
     builder.row(types.KeyboardButton(text='Отправить номер', request_contact=True))
     await message.answer(text='Пожалуйста, отправьте свой номер телефона для завершения регистрации',
